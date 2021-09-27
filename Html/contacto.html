@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Cabin:wght@600&family=Dancing+Script:wght@700&family=Kaushan+Script&family=Palette+Mosaic&display=swap" rel="stylesheet">  
+    <link rel="stylesheet" href="../Css/pruebacss.css">
+    <link rel="stylesheet" href="../Estilos/estilo.css">
+    <title>Contactanos ProntoCourier</title>
+    <meta name="description=" content="Pronto Courier es un Courier para ti Amigo Emprendedor, 
+    que se encargara de llevar tus productos a tus clientes, para que tu solo te enfoques en realizar las ventas. ">
+    <meta name="keywords" content="courier, envios, entregas, entregas a domicilio, courier express, telefono courier lima">
+</head>
+
+<body>
+    <header>
+        <!--BOX MODELIN EN EL HEADER-->
+        <div id="cajaFlex">
+            <!--Logo y Titulo-->
+            <div class="logo">
+                <a href="../index.html"><img class="imagen" src="../Multimedia/Logo1.png" alt="Logo" title="Logo"> </a>
+            </div>
+            <div class="pronto">
+                <h1> PRONTO COURIER </h1>
+            </div>
+            <!--FIN Logo y Titulo-->
+            <!--Iconos de redes Sociales-->
+            <div class="redSociales">
+                <a href="https://www.facebook.com/ProntoCourier1/" target="_blank"><img src="../Multimedia/facebook.png"alt="facebook"></a>
+            <a href="#"><img src="../Multimedia/instagram.png" alt="instagram"></a>
+            </div>
+            <!--Fin Iconos de redes Sociales-->
+        </div>
+    <!--Menu de Navegacion-->       
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="../index.html"><img class="imagenNav" src="../Multimedia/Logo1.png" alt="Logo" title="Logo"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="../index.html">INICIO</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="servicios.html">SERVICIOS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="tarifas.html">TARIFAS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="clientes.html">CLIENTES</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="contacto.html">CONTACTO</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+        <!--Fin menu de Navegacion-->
+    </header>
+    <main>
+        
+        <div class="container" id="fondoMain">
+            <div id="flexMain">
+                <div class="row">
+                    <!--Formulario Contactanos-->
+                    <div class="col-sm-6">
+                        <h3 class="cuerpo__subTitulos">CONTACTANOS</h3> <br>
+                        <p>Ingrese datos</p>
+                        <form>
+                            <div class="mb-3">
+                                <label for="nombre" class="form-label">Nombre</label>
+                                <input type="text" class="form-control" placeholder="Ingrese Nombre" id="nombre">
+                            </div>
+                            <div class="mb-3">
+                                <label for="telefono" class="form-label">Nro Contacto</label>
+                                <input type="text" placeholder="Ingrese nro de teléfono" class="form-control" id="telefono">
+                            </div>
+                            <div class="mb-3">
+                                <label for="exampleInputEmail1" class="form-label">Correo Electonico</label>
+                                <input type="email" placeholder="Ingrese Correo Electonico" class="form-control" id="exampleInputEmail1"
+                                aria-describedby="emailHelp">
+                            </div>
+                            <div class="mb-3">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="genero" id="masculino">
+                                    <label class="form-check-label" for="masculino">
+                                        Masculino
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="genero" id="femenino" checked>
+                                    <label class="form-check-label" for="femenino">
+                                        Femenino
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="mb-3">
+                                <label for="floatingTextarea" class="form-label">Consulta</label>
+                                <textarea class="form-control" placeholder="Ingrese su consulta aqui" id="floatingTextarea"></textarea>
+                            </div>
+                            <div class="mb-3 form-check">
+                                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                <label class="form-check-label" for="exampleCheck1">Acepta que sus datos sean guardados para
+                                    ponernos en
+                                    contacto con usted</label>
+                            </div>
+                            <button type="reset" class="btn btn-primary">
+                                Restablecer
+                            </button>
+                            <!-- Button trigger modal -->
+                            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                Enviar Formulario
+                            </button>         
+                            <!-- Modal -->
+                            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                                aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 id="texModal" class="modal-title" id="exampleModalLabel">Alerta</h5>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <p id="texModal">Esta seguro de enviar los datos del formulario</p>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Regresar</button>
+                                            <button type="button" class="btn btn-primary">Enviar</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <!--FIN Formulario Contactanos-->
+                    <!--Datos de contacto-->
+                    <div class="col-sm-6">
+                        <h3 class="cuerpo__subTitulos">Información de Contacto</h3> <br>
+                        <ul>
+                            <li>Atención al Cliente 456-1452 </li>
+                            <li>E-mail: contacto@prontocourier.com.pe</li>
+                            <li>Direccion: Cll. Albizia 980. Santiago de Surco - Lima</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--FIN Datos de contacto-->
+    </main>
+    <!--Pie de Pagina-->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-9 col-md-9" >
+                    <ul class="foter__titulo">Medios de Pago
+                        <li class="foter__listado">Depositos en nuetras cuentas en los bancos BCP, Scotiabank, Banco de la Nación</li>
+                        <li class="foter__listado">Pagos directos a traves de plataforma PLIM y YAPE</li>
+                        <li class="foter__listado">Pago en efectivo (Monto exacto, no damos vuelto)</li>
+                    </ul>
+                </div>
+                <div class="col-sm-3 col-md-3" class="footDos">
+                    <img class="imagenFooter" src="../Multimedia/Repartidor.png" alt="Repartidor">
+                </div>               
+            </div>
+        </div>
+    </footer>
+    <!--Fin Pie de Pagina-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+</body>
+</html>

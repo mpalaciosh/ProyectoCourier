@@ -1,0 +1,181 @@
+/*LISTAS*/
+    $textColorLista: cyan;
+    $textFamilyLista: 'Sans',sans-serif;
+    $textamanioLista:100%;
+/*PARRAFOS*/
+    $textColorParrafo: cornsilk;
+    $textamanioParrafo:100%;
+    $textFamilyParrafo: 'Cabin', sans-serif;
+/*SUBTITULOS*/
+    $textColorSubtitulos: antiquewhite;
+    $textTamanioSubtitulos: 100%;
+    $textFamilySubtitulos: 'Sans',sans-serif;
+/*FOOTER*/
+    $textColorFoter:rgb(16, 16, 17); 
+    $texTamanioFoter: 100%;
+    $textFamilyFoter:'Anton', sans-serif;
+    $TextColorListadoFoter:rgb(12, 26, 110);
+    $fondoColorFotter:linear-gradient(blue,rgb(221, 235, 224), rgb(0, 139, 132)) ;
+/*MAIN*/
+    $fondoColorMain:linear-gradient( brown,rgb(78, 21, 21));
+
+/*BODY*/
+    $textColorBody:#0a191d;
+/*NAVEGADOR*/
+    $textTamanioNav:25px;
+    :root{
+        --colorbody: white;
+        --separacion: 2%;
+    }
+
+
+body{   
+        background-color: $textColorBody;
+        margin: 1rem 1rem 1rem 1rem;
+}
+footer{
+    background-image: $fondoColorFotter ;
+    padding: 2%;
+    margin: 3%;
+}
+
+
+/*NAVEGADOR*/
+
+nav{
+    li{
+        font-size: $textTamanioNav;
+    }
+    a{
+        @extend li;
+    }
+}
+.listados{
+    &__lista{  
+        color: $textColorLista;
+        font-family: $textFamilyLista;
+        font-size: $textamanioLista;
+    }
+    &__item{
+        color: $textColorLista;
+        font-family: $textFamilyLista;
+        font-size: $textamanioLista - 10; 
+    }
+    &__enlace{
+        color: $textColorLista;
+        font-family: $textFamilyLista;
+        font-size: $textamanioLista - 10; 
+
+    }
+}
+
+
+#fondoMain{
+    background-image: $fondoColorMain;
+}
+.cuerpo{
+    &__parrafos{
+        color:$textColorParrafo;
+        font-family: $textFamilyParrafo;
+        font-size: $textamanioParrafo;
+        font-weight: bold;
+
+    }
+    &__subTitulos{
+        color:$textColorSubtitulos;
+        font-family: $textFamilySubtitulos;
+        font-size: $textTamanioSubtitulos + 50;
+        font-style: inherit;
+        text-align: center;
+    }
+}
+.foter{
+    &__titulo{
+        color: textColorFoter;
+        font-size: $texTamanioFoter;
+        font-family: $textFamilyFoter;
+    }
+    &__listado{
+    color: $TextColorListadoFoter;
+    font-weight: lighter;
+    font-style:inherit;
+    }
+}
+
+@mixin titulos($textColorTitulo, $tamanioTitulo) {
+    color: $textColorTitulo;
+    font-size: $tamanioTitulo;
+    font-family: "Kaushan Script", cursive;
+    padding-left: 10px;
+    margin-top: 50px;
+    font-weight: bold;
+}
+h1{
+   @include titulos( rgb(0, 139, 132), 250% );
+}
+
+
+/*SUB-MENU*/
+section{
+    ul{
+        ul{
+            position: absolute;
+            display: none;
+            li{
+                display: block;
+                text-decoration: none;
+                color: $textColorSubtitulos;
+                background-color: black;
+            }
+        }
+        li:hover{
+            ul{
+                display: block;
+                font-size: 20px;
+            }
+            
+        }
+    }
+}
+/*FIN SUB-MENU*/
+/* INDEX*/
+#presentacion{
+    width: 100%;
+    background-image: url(../Multimedia/fondo.png);
+    background-size: 150%;
+    margin-top: 50px;
+}
+
+#flexIndex{
+    display: flex; flex-direction: row;
+    justify-content:space-between;
+    margin: 50px;
+}
+.imgVideo{
+    width: 80%;
+}
+.video{
+height: 100%;
+text-align: right;
+padding-top: 50px;
+}
+#seguimiento{
+    @extend .video;
+    text-align: left;
+}
+#tabla{
+    background-color: blue;
+    padding: var(--separacion);
+}
+
+.tamEmpresas{
+    width: 80%;
+    height: 100%;
+}
+#texModal{
+    color: rgb(9, 4, 37);
+}
+#centrar{
+    text-align: center;
+    width: 50%;
+}

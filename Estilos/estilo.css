@@ -1,0 +1,137 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+:root{
+    --colorbody: white;
+    --separacion: 2%;
+}
+header{
+    width: 90%;
+    height: 20%;
+    margin:15px;
+    padding-bottom: 20px;
+}
+/*BOX MODELIN EN EL HEADER*/
+#cajaFlex {
+    width: 100%;
+    height: 80%;
+    display: flex; flex-direction: row;
+    
+}
+.redSociales{
+width: 20%;
+height: 20%;
+text-align: right;
+padding-top: 50px;
+}
+.logo{
+width: 42%;
+height: 100%;
+text-align:right;
+}
+.imagen{
+    width: 90px;
+    margin-top: 20px;
+}
+.imagenNav{
+    width: 50px;
+    margin-top: 5px;
+}
+.pronto{
+height: 100%;
+width: 48%;
+text-align: left;
+}
+
+
+/* CONTENEDOR */
+#flexMain{
+    margin-top:4%;
+    padding: var(--separacion);
+    color: var(--colorbody);
+    font-size: 15px;  
+    font-family: 'Cabin', sans-serif;
+    text-align: left;
+}
+
+.subLista{
+padding-left: 10px;
+padding-top: 17px;
+}
+/* FIN CONTENEDOR */
+
+/* MAIN*/
+.imgFoto{
+    width: 200px;
+}
+.imgFoto:hover{
+    transform: scale(1.5,1.5);
+}
+.mainListas{
+    list-style-type:square;   
+    list-style-position:outside;
+    padding: 20px;
+}
+/*FIN MAIN*/
+/*FOOTER*/
+
+.imagenFooter{
+    width: 50%;
+    margin-left: 20%;
+}
+
+/*FIN FOOTER*/
+
+
+
+/*GRILLA TARIFA*/
+.grillaTarifas{
+    background-color: brown;
+    width: 90%;
+    height: 80%;
+    display: grid;
+    grid-template-columns: 20% 20% 20% 20% 20%;
+    grid-template-rows: 10% 10% 10% 10% 60%;
+    grid-template-areas: "titulo titulo titulo titulo titulo"
+                            "des des des des des" ;
+    padding: 30px;
+    margin: 20px;
+    color: var(--colorbody);
+    font-size: 15px;  
+    font-family: 'Cabin', sans-serif;
+    text-align: left;
+}
+.titulo{ 
+    grid-area: titulo;
+}
+div h4{
+    grid-area: des;
+}
+div h2, h3, p{
+    font-size: 100%;
+}
+div h4,h5{
+font-size: 100%;
+}
+.centrar{
+    text-align: center;
+    font-size: 18px;
+
+}
+.tarifa ul{
+    text-align: center;
+}
+/*FIN GRILLA TARIFA*/
+
+@media only screen and (max-width:900px){
+
+}
+
+@media only screen and (max-width:600px){
+    #flexIndex{
+        display: flex;  flex-direction: column;
+    }
+
+}
+

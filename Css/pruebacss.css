@@ -1,0 +1,126 @@
+/*LISTAS*/
+/*PARRAFOS*/
+/*SUBTITULOS*/
+/*FOOTER*/
+/*MAIN*/
+/*BODY*/
+/*NAVEGADOR*/
+:root {
+  --colorbody: white;
+  --separacion: 2%; }
+
+body {
+  background-color: #0a191d;
+  margin: 1rem 1rem 1rem 1rem; }
+
+footer {
+  background-image: linear-gradient(blue, #ddebe0, #008b84);
+  padding: 2%;
+  margin: 3%; }
+
+/*NAVEGADOR*/
+nav li, nav a {
+  font-size: 25px; }
+
+.listados__lista {
+  color: cyan;
+  font-family: "Sans", sans-serif;
+  font-size: 100%; }
+
+.listados__item {
+  color: cyan;
+  font-family: "Sans", sans-serif;
+  font-size: 90%; }
+
+.listados__enlace {
+  color: cyan;
+  font-family: "Sans", sans-serif;
+  font-size: 90%; }
+
+#fondoMain {
+  background-image: linear-gradient(brown, #4e1515); }
+
+.cuerpo__parrafos {
+  color: cornsilk;
+  font-family: "Cabin", sans-serif;
+  font-size: 100%;
+  font-weight: bold; }
+
+.cuerpo__subTitulos {
+  color: antiquewhite;
+  font-family: "Sans", sans-serif;
+  font-size: 150%;
+  font-style: inherit;
+  text-align: center; }
+
+.foter__titulo {
+  color: textColorFoter;
+  font-size: 100%;
+  font-family: "Anton", sans-serif; }
+
+.foter__listado {
+  color: #0c1a6e;
+  font-weight: lighter;
+  font-style: inherit; }
+
+h1 {
+  color: #008b84;
+  font-size: 250%;
+  font-family: "Kaushan Script", cursive;
+  padding-left: 10px;
+  margin-top: 50px;
+  font-weight: bold; }
+
+/*SUB-MENU*/
+section ul ul {
+  position: absolute;
+  display: none; }
+  section ul ul li, section ul ul nav a, nav section ul ul a {
+    display: block;
+    text-decoration: none;
+    color: antiquewhite;
+    background-color: black; }
+
+section ul li:hover ul, section ul nav a:hover ul, nav section ul a:hover ul {
+  display: block;
+  font-size: 20px; }
+
+/*FIN SUB-MENU*/
+/* INDEX*/
+#presentacion {
+  width: 100%;
+  background-image: url(../Multimedia/fondo.png);
+  background-size: 150%;
+  margin-top: 50px; }
+
+#flexIndex {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 50px; }
+
+.imgVideo {
+  width: 80%; }
+
+.video, #seguimiento {
+  height: 100%;
+  text-align: right;
+  padding-top: 50px; }
+
+#seguimiento {
+  text-align: left; }
+
+#tabla {
+  background-color: blue;
+  padding: var(--separacion); }
+
+.tamEmpresas {
+  width: 80%;
+  height: 100%; }
+
+#texModal {
+  color: #090425; }
+
+#centrar {
+  text-align: center;
+  width: 50%; }
