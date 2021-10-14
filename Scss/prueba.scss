@@ -1,3 +1,7 @@
+*{
+    padding: 0;
+    margin: 0;
+}
 /*LISTAS*/
     $textColorLista: cyan;
     $textFamilyLista: 'Sans',sans-serif;
@@ -18,7 +22,6 @@
     $fondoColorFotter:linear-gradient(blue,rgb(221, 235, 224), rgb(0, 139, 132)) ;
 /*MAIN*/
     $fondoColorMain:linear-gradient( brown,rgb(78, 21, 21));
-
 /*BODY*/
     $textColorBody:#0a191d;
 /*NAVEGADOR*/
@@ -27,7 +30,8 @@
         --colorbody: white;
         --separacion: 2%;
     }
-
+/*HEADER*/
+    $fondocolorHeader:linear-gradient( rgb(37, 24, 24),rgb(78, 21, 21));
 
 body{   
         background-color: $textColorBody;
@@ -38,7 +42,10 @@ footer{
     padding: 2%;
     margin: 3%;
 }
-
+header{
+    padding: 2%;
+    margin: 3%;
+}
 
 /*NAVEGADOR*/
 
@@ -141,7 +148,7 @@ section{
 /* INDEX*/
 #presentacion{
     width: 100%;
-    background-image: url(../Multimedia/fondo.png);
+    background-image: $fondoColorMain ;
     background-size: 150%;
     margin-top: 50px;
 }
@@ -179,3 +186,34 @@ padding-top: 50px;
     text-align: center;
     width: 50%;
 }
+
+/*BOX MODELIN EN EL HEADER*/
+#cajaCabezera {
+    height: 80%; 
+}
+ 
+.redSociales{
+height: 20%;
+text-align: right;
+padding-top: 50px;
+}
+.logo{
+
+height: 100%;
+text-align:right;
+}
+.imagen{
+    width: 90px;
+    margin-top: 20px;
+}
+.imagenNav{
+    width: 50px;
+    margin-top: 5px;
+}
+.pronto{
+height: 100%;
+width: 48%;
+text-align: left;
+font-size: 80%;
+}
+

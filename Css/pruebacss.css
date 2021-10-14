@@ -1,3 +1,7 @@
+* {
+  padding: 0;
+  margin: 0; }
+
 /*LISTAS*/
 /*PARRAFOS*/
 /*SUBTITULOS*/
@@ -9,12 +13,17 @@
   --colorbody: white;
   --separacion: 2%; }
 
+/*HEADER*/
 body {
   background-color: #0a191d;
   margin: 1rem 1rem 1rem 1rem; }
 
 footer {
   background-image: linear-gradient(blue, #ddebe0, #008b84);
+  padding: 2%;
+  margin: 3%; }
+
+header {
   padding: 2%;
   margin: 3%; }
 
@@ -89,7 +98,7 @@ section ul li:hover ul, section ul nav a:hover ul, nav section ul a:hover ul {
 /* INDEX*/
 #presentacion {
   width: 100%;
-  background-image: url(../Multimedia/fondo.png);
+  background-image: linear-gradient(brown, #4e1515);
   background-size: 150%;
   margin-top: 50px; }
 
@@ -124,3 +133,30 @@ section ul li:hover ul, section ul nav a:hover ul, nav section ul a:hover ul {
 #centrar {
   text-align: center;
   width: 50%; }
+
+/*BOX MODELIN EN EL HEADER*/
+#cajaCabezera {
+  height: 80%; }
+
+.redSociales {
+  height: 20%;
+  text-align: right;
+  padding-top: 50px; }
+
+.logo {
+  height: 100%;
+  text-align: right; }
+
+.imagen {
+  width: 90px;
+  margin-top: 20px; }
+
+.imagenNav {
+  width: 50px;
+  margin-top: 5px; }
+
+.pronto {
+  height: 100%;
+  width: 48%;
+  text-align: left;
+  font-size: 80%; }
