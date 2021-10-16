@@ -11,7 +11,7 @@
 /*NAVEGADOR*/
 :root {
   --colorbody: white;
-  --separacion: 2%; }
+  --separacion: 1%; }
 
 /*HEADER*/
 body {
@@ -20,12 +20,16 @@ body {
 
 footer {
   background-image: linear-gradient(blue, #ddebe0, #008b84);
-  padding: 2%;
+  padding: var(--separacion);
   margin: 3%; }
 
 header {
   padding: 2%;
   margin: 3%; }
+
+main {
+  padding: 5%;
+  margin: 1%; }
 
 /*NAVEGADOR*/
 nav li, nav a {
@@ -47,7 +51,8 @@ nav li, nav a {
   font-size: 90%; }
 
 #fondoMain {
-  background-image: linear-gradient(brown, #4e1515); }
+  background-image: linear-gradient(brown, #4e1515);
+  margin: 3%; }
 
 .cuerpo__parrafos {
   color: cornsilk;
@@ -134,6 +139,9 @@ section ul li:hover ul, section ul nav a:hover ul, nav section ul a:hover ul {
   text-align: center;
   width: 50%; }
 
+#tamCarrusel img {
+  width: 70%; }
+
 /*BOX MODELIN EN EL HEADER*/
 #cajaCabezera {
   height: 80%; }
@@ -144,7 +152,6 @@ section ul li:hover ul, section ul nav a:hover ul, nav section ul a:hover ul {
   padding-top: 50px; }
 
 .logo {
-  height: 100%;
   text-align: right; }
 
 .imagen {
@@ -156,7 +163,65 @@ section ul li:hover ul, section ul nav a:hover ul, nav section ul a:hover ul {
   margin-top: 5px; }
 
 .pronto {
-  height: 100%;
-  width: 48%;
-  text-align: left;
+  text-align: center;
   font-size: 80%; }
+
+.imagenFooter {
+  width: 50%;
+  margin-left: 20%; }
+
+/* CONTENEDOR */
+#flexMain {
+  margin-top: 4%;
+  padding: var(--separacion);
+  color: var(--colorbody);
+  font-size: 15px;
+  font-family: 'Cabin', sans-serif;
+  text-align: left; }
+
+.subLista {
+  padding-left: 10px;
+  padding-top: 17px; }
+
+/* FIN CONTENEDOR */
+/* MAIN*/
+.imgFoto {
+  width: 150px; }
+
+.imgFoto:hover {
+  transform: scale(1.2, 1.2); }
+
+.mainListas {
+  list-style-type: square;
+  list-style-position: outside;
+  padding: 20px; }
+
+/*FIN MAIN*/
+@media only screen and (max-width: 900px) {
+  .imagenFooter {
+    width: 100%;
+    margin-left: 20%; }
+  .imgVideo {
+    width: 100%; } }
+
+@media only screen and (max-width: 600px) {
+  .redSociales {
+    height: 30px;
+    text-align: center;
+    padding-top: 50px; }
+    .redSociales img {
+      width: 40px; }
+  .logo {
+    text-align: right; }
+    .logo img {
+      width: 60px; }
+  h1 {
+    font-size: 20px; }
+  #flexIndex {
+    display: flex;
+    flex-direction: column; }
+  .imagenFooter {
+    width: 50%;
+    margin-left: 20%; }
+  .imgVideo {
+    width: 80%; } }

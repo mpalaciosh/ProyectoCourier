@@ -44,7 +44,13 @@ width: 48%;
 text-align: left;
 }
 
-----------------------------------------------------
+.imagenFooter{
+    width: 50%;
+    margin-left: 20%;
+}
+
+/*FIN FOOTER*/
+
 /* CONTENEDOR */
 #flexMain{
     margin-top:4%;
@@ -54,14 +60,14 @@ text-align: left;
     font-family: 'Cabin', sans-serif;
     text-align: left;
 }
-
 .subLista{
-padding-left: 10px;
-padding-top: 17px;
-}
-/* FIN CONTENEDOR */
+    padding-left: 10px;
+    padding-top: 17px;
+    }
+    /* FIN CONTENEDOR */
 
-/* MAIN*/
+
+    /* MAIN*/
 .imgFoto{
     width: 200px;
 }
@@ -74,14 +80,13 @@ padding-top: 17px;
     padding: 20px;
 }
 /*FIN MAIN*/
+----------------------------------------------------
+
+
+
+
+
 /*FOOTER*/
-
-.imagenFooter{
-    width: 50%;
-    margin-left: 20%;
-}
-
-/*FIN FOOTER*/
 
 
 
