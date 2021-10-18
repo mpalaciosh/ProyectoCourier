@@ -16,20 +16,25 @@
 /*HEADER*/
 body {
   background-color: #0a191d;
-  margin: 1rem 1rem 1rem 1rem; }
+  /* margin: 1rem 1rem 1rem 1rem;*/ }
 
-footer {
+footer .container {
   background-image: linear-gradient(blue, #ddebe0, #008b84);
-  padding: var(--separacion);
-  margin: 3%; }
+  margin-top: 0%;
+  max-width: 90%;
+  padding: 1.5%; }
 
 header {
   padding: 2%;
-  margin: 3%; }
+  margin: 3%;
+  margin-bottom: 1%;
+  margin-top: 1%; }
 
 main {
-  padding: 5%;
-  margin: 1%; }
+  padding: 2%;
+  margin: 3%;
+  margin-bottom: 1%;
+  margin-top: 1%; }
 
 /*NAVEGADOR*/
 nav li, nav a {
@@ -50,14 +55,10 @@ nav li, nav a {
   font-family: "Sans", sans-serif;
   font-size: 90%; }
 
-#fondoMain {
-  background-image: linear-gradient(brown, #4e1515);
-  margin: 3%; }
-
 .cuerpo__parrafos {
   color: cornsilk;
   font-family: "Cabin", sans-serif;
-  font-size: 100%;
+  font-size: 110%;
   font-weight: bold; }
 
 .cuerpo__subTitulos {
@@ -97,15 +98,29 @@ section ul ul {
 
 section ul li:hover ul, section ul nav a:hover ul, nav section ul a:hover ul {
   display: block;
-  font-size: 20px; }
+  font-size: 15px; }
+
+#alineacion.container {
+  margin-top: 2%;
+  background-image: linear-gradient(brown, #4e1515);
+  max-width: 100%;
+  padding: 1.5%; }
+  #alineacion.container ul li, #alineacion.container ul nav a, nav #alineacion.container ul a {
+    font-size: 20px; }
 
 /*FIN SUB-MENU*/
 /* INDEX*/
-#presentacion {
-  width: 100%;
+#fondoMain.container {
   background-image: linear-gradient(brown, #4e1515);
-  background-size: 150%;
-  margin-top: 50px; }
+  max-width: 100%;
+  padding: 3%; }
+
+#presentacion.container {
+  max-width: 100%;
+  border: 3%;
+  padding: 1.5%;
+  background-image: linear-gradient(brown, #4e1515);
+  margin-bottom: 3%; }
 
 #flexIndex {
   display: flex;
@@ -124,9 +139,12 @@ section ul li:hover ul, section ul nav a:hover ul, nav section ul a:hover ul {
 #seguimiento {
   text-align: left; }
 
-#tabla {
+#tabla.container {
   background-color: blue;
-  padding: var(--separacion); }
+  padding: var(--separacion);
+  max-width: 100%;
+  padding: 1.5%;
+  margin-top: 3%; }
 
 .tamEmpresas {
   width: 80%;
@@ -136,14 +154,19 @@ section ul li:hover ul, section ul nav a:hover ul, nav section ul a:hover ul {
   color: #090425; }
 
 #centrar {
-  text-align: center;
   width: 50%; }
+  #centrar img {
+    text-align: center; }
 
 #tamCarrusel img {
   width: 70%; }
 
 /*BOX MODELIN EN EL HEADER*/
-#cajaCabezera {
+#cajaCabezera.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  width: 100%;
   height: 80%; }
 
 .redSociales {
@@ -172,12 +195,18 @@ section ul li:hover ul, section ul nav a:hover ul, nav section ul a:hover ul {
 
 /* CONTENEDOR */
 #flexMain {
-  margin-top: 4%;
-  padding: var(--separacion);
+  margin-top: 2%;
   color: var(--colorbody);
   font-size: 15px;
   font-family: 'Cabin', sans-serif;
   text-align: left; }
+
+#flexClientes {
+  margin-top: 2%;
+  color: var(--colorbody);
+  font-size: 80%;
+  font-family: 'Cabin', sans-serif;
+  text-align: center; }
 
 .subLista {
   padding-left: 10px;
@@ -197,12 +226,22 @@ section ul li:hover ul, section ul nav a:hover ul, nav section ul a:hover ul {
   padding: 20px; }
 
 /*FIN MAIN*/
+#cajaImagen {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  max-width: 60%;
+  padding: 1.5%;
+  text-align: center; }
+
 @media only screen and (max-width: 900px) {
   .imagenFooter {
     width: 100%;
     margin-left: 20%; }
   .imgVideo {
-    width: 100%; } }
+    width: 100%; }
+  #cajaImagen.container img {
+    width: 80%; } }
 
 @media only screen and (max-width: 600px) {
   .redSociales {
@@ -224,4 +263,6 @@ section ul li:hover ul, section ul nav a:hover ul, nav section ul a:hover ul {
     width: 50%;
     margin-left: 20%; }
   .imgVideo {
+    width: 80%; }
+  #cajaImagen.container img {
     width: 80%; } }
